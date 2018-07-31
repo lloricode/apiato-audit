@@ -1,0 +1,7 @@
+{
+  "name": "lloricode/apiato-audit",
+  "description": "Audit Container for apiato.",
+  "require": {
+    "owen-it/laravel-auditing": "^7.0"
+  }
+}
