@@ -13,4 +13,5 @@ return [
     'allowed_models' => [
         
     ],
+    'enable_api_routes' => true,
 ];

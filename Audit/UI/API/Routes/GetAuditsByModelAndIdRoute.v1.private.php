@@ -67,11 +67,13 @@
 }
  */
 
-/** @var Route $router */
-$router->get('audits/{model}/{id}', [
+if (config('audit-container.enable-enable_api_routes') === true) {
+    /** @var Route $router */
+    $router->get('audits/{model}/{id}', [
     'as' => 'api_audit_get_audits_by_model_and_id',
     'uses'  => 'Controller@getAuditsByModelAndId',
     'middleware' => [
       'auth:api',
     ],
 ]);
+}

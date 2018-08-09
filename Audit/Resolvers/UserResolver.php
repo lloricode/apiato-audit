@@ -34,8 +34,6 @@ class UserResolver implements \OwenIt\Auditing\Contracts\UserResolver
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
                 return Auth::guard($guard)->user();
-            } else {
-                return User::first();
             }
         }
     }
