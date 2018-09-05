@@ -6,6 +6,7 @@ namespace App\Containers\Audit\Models;
 use OwenIt\Auditing\Models\Audit as AuditBase;
 use Apiato\Core\Traits\HashIdTrait;
 use Apiato\Core\Traits\HasResourceKeyTrait;
+use App\Containers\Person\Models\Person;
 
 class Audit extends AuditBase
 {
